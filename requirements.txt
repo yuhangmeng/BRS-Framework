@@ -1,0 +1,29 @@
+# BRS-BNI: Balanced Relevance Score framework
+# Tested with Python 3.10–3.12
+
+# Core scientific stack
+numpy>=1.23
+pandas>=1.5
+scipy>=1.10
+scikit-learn>=1.2
+
+# Deep learning (attention-gated MLP component)
+torch>=2.0
+
+# Gradient-boosted trees + SHAP attributions
+lightgbm>=3.3
+shap>=0.42
+
+# Visualization
+matplotlib>=3.6
+seaborn>=0.12
+networkx>=3.0
+
+# Utilities
+tqdm>=4.64
+openpyxl>=3.0            # Excel I/O for pandas
+
+# Optional (used in specific figure scripts)
+# matplotlib-venn>=0.11  # Venn diagrams (Figure 2)
+# adjustText>=0.8        # Label placement (Figure 8)
+# python-louvain>=0.16   # Community detection (network figure)
