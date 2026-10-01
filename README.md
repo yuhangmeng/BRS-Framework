@@ -141,7 +141,7 @@ Ground truth is defined as features reaching statistical significance (Mann–Wh
 
 ## Citation
 
-If you use BRS in your research, please cite:
+
 
 ```
 [Citation will be added upon publication]
