@@ -1,0 +1,43 @@
+method,metric,published,reproduced,match
+BRS,recall_5,0.6,0.6,True
+BRS,recall_10,0.8,0.8,True
+BRS,recall_20,1.0,1.0,True
+BRS,pair_rank,8.0,8.0,True
+BRS,triplet_rank,142.0,142.0,True
+BRS,top5,X_lin_3; X_nonlin_1; X_lin_1; X_noise_166; X_noise_116,X_lin_3; X_nonlin_1; X_lin_1; X_noise_166; X_noise_116,True
+LASSO,recall_5,0.8,0.8,True
+LASSO,recall_10,0.8,0.8,True
+LASSO,recall_20,0.8,0.8,True
+LASSO,pair_rank,63.0,57.0,False
+LASSO,triplet_rank,,,True
+LASSO,top5,X_lin_3; X_nonlin_1; X_lin_1; X_noise_116; X_lin_2,X_lin_3; X_nonlin_1; X_lin_1; X_noise_116; X_lin_2,True
+ElasticNet,recall_5,0.8,0.8,True
+ElasticNet,recall_10,0.8,0.8,True
+ElasticNet,recall_20,0.8,0.8,True
+ElasticNet,pair_rank,69.0,69.0,True
+ElasticNet,triplet_rank,,,True
+ElasticNet,top5,X_lin_3; X_nonlin_1; X_lin_1; X_noise_116; X_lin_2,X_lin_3; X_nonlin_1; X_lin_1; X_noise_116; X_lin_2,True
+RandomForest,recall_5,0.6,0.6,True
+RandomForest,recall_10,0.6,0.6,True
+RandomForest,recall_20,1.0,1.0,True
+RandomForest,pair_rank,190.0,190.0,True
+RandomForest,triplet_rank,363.0,363.0,True
+RandomForest,top5,X_nonlin_1; X_lin_3; X_lin_1; X_noise_168; X_noise_128,X_nonlin_1; X_lin_3; X_lin_1; X_noise_168; X_noise_128,True
+LightGBM+SHAP,recall_5,0.6,0.6,True
+LightGBM+SHAP,recall_10,0.6,0.6,True
+LightGBM+SHAP,recall_20,0.6,0.6,True
+LightGBM+SHAP,pair_rank,60.0,60.0,True
+LightGBM+SHAP,triplet_rank,,,True
+LightGBM+SHAP,top5,X_nonlin_1; X_lin_3; X_lin_1; X_noise_168; X_noise_128,X_nonlin_1; X_lin_3; X_lin_1; X_noise_168; X_noise_128,True
+PermutationImp,recall_5,0.6,0.6,True
+PermutationImp,recall_10,0.6,0.6,True
+PermutationImp,recall_20,0.8,0.8,True
+PermutationImp,pair_rank,,,True
+PermutationImp,triplet_rank,,,True
+PermutationImp,top5,X_nonlin_1; X_lin_3; X_lin_1; X_noise_168; X_noise_128,X_nonlin_1; X_lin_3; X_lin_1; X_noise_168; X_noise_128,True
+MutualInfo,recall_5,0.6,0.6,True
+MutualInfo,recall_10,0.6,0.6,True
+MutualInfo,recall_20,0.6,0.6,True
+MutualInfo,pair_rank,,,True
+MutualInfo,triplet_rank,,,True
+MutualInfo,top5,X_nonlin_1; X_lin_3; X_lin_1; X_noise_91; X_noise_153,X_nonlin_1; X_lin_3; X_lin_1; X_noise_91; X_noise_153,True

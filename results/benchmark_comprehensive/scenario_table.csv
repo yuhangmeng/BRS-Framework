@@ -1,0 +1,78 @@
+scenario,method,n_samples,n_noise,noise_std,signal_scale,recall_5,recall_10,recall_20
+Default,BRS,50,195,0.4,1.0,0.6,0.8,1.0
+Default,LASSO,50,195,0.4,1.0,0.8,0.8,0.8
+Default,ElasticNet,50,195,0.4,1.0,0.8,0.8,0.8
+Default,RandomForest,50,195,0.4,1.0,0.6,0.6,1.0
+Default,LightGBM+SHAP,50,195,0.4,1.0,0.6,0.6,0.6
+Default,PermutationImp,50,195,0.4,1.0,0.6,0.6,0.8
+Default,MutualInfo,50,195,0.4,1.0,0.6,0.6,0.6
+Low noise,BRS,50,195,0.2,1.0,0.6,0.8,1.0
+Low noise,LASSO,50,195,0.2,1.0,0.6,0.6,0.6
+Low noise,ElasticNet,50,195,0.2,1.0,0.6,0.6,0.6
+Low noise,RandomForest,50,195,0.2,1.0,0.6,0.6,1.0
+Low noise,LightGBM+SHAP,50,195,0.2,1.0,0.6,0.6,0.6
+Low noise,PermutationImp,50,195,0.2,1.0,0.6,0.6,1.0
+Low noise,MutualInfo,50,195,0.2,1.0,0.6,0.6,0.6
+High noise,BRS,50,195,0.8,1.0,0.8,0.8,0.8
+High noise,LASSO,50,195,0.8,1.0,0.8,0.8,0.8
+High noise,ElasticNet,50,195,0.8,1.0,0.8,0.8,0.8
+High noise,RandomForest,50,195,0.8,1.0,0.6,0.6,1.0
+High noise,LightGBM+SHAP,50,195,0.8,1.0,0.6,0.6,0.6
+High noise,PermutationImp,50,195,0.8,1.0,0.6,0.8,0.8
+High noise,MutualInfo,50,195,0.8,1.0,0.6,0.6,0.6
+Very high noise,BRS,50,195,1.2,1.0,0.6,0.8,0.8
+Very high noise,LASSO,50,195,1.2,1.0,0.6,0.8,0.8
+Very high noise,ElasticNet,50,195,1.2,1.0,0.6,0.8,0.8
+Very high noise,RandomForest,50,195,1.2,1.0,0.6,0.6,1.0
+Very high noise,LightGBM+SHAP,50,195,1.2,1.0,0.6,0.6,0.6
+Very high noise,PermutationImp,50,195,1.2,1.0,0.6,0.6,0.8
+Very high noise,MutualInfo,50,195,1.2,1.0,0.6,0.6,0.6
+Small sample (30),BRS,30,195,0.4,1.0,0.4,0.4,0.6
+Small sample (30),LASSO,30,195,0.4,1.0,0.4,0.4,0.4
+Small sample (30),ElasticNet,30,195,0.4,1.0,0.4,0.4,0.4
+Small sample (30),RandomForest,30,195,0.4,1.0,0.4,0.4,0.6
+Small sample (30),LightGBM+SHAP,30,195,0.4,1.0,0.2,0.2,0.4
+Small sample (30),PermutationImp,30,195,0.4,1.0,0.4,0.4,0.6
+Small sample (30),MutualInfo,30,195,0.4,1.0,0.4,0.4,0.4
+Large sample (100),BRS,100,195,0.4,1.0,0.6,0.6,0.6
+Large sample (100),LASSO,100,195,0.4,1.0,0.6,0.6,0.6
+Large sample (100),ElasticNet,100,195,0.4,1.0,0.6,0.6,0.6
+Large sample (100),RandomForest,100,195,0.4,1.0,0.6,1.0,1.0
+Large sample (100),LightGBM+SHAP,100,195,0.4,1.0,0.6,0.8,0.8
+Large sample (100),PermutationImp,100,195,0.4,1.0,1.0,1.0,1.0
+Large sample (100),MutualInfo,100,195,0.4,1.0,0.2,0.2,0.4
+Large sample (200),BRS,200,195,0.4,1.0,0.6,0.6,0.6
+Large sample (200),LASSO,200,195,0.4,1.0,0.8,0.8,0.8
+Large sample (200),ElasticNet,200,195,0.4,1.0,0.8,0.8,0.8
+Large sample (200),RandomForest,200,195,0.4,1.0,0.8,1.0,1.0
+Large sample (200),LightGBM+SHAP,200,195,0.4,1.0,0.8,0.8,1.0
+Large sample (200),PermutationImp,200,195,0.4,1.0,0.8,1.0,1.0
+Large sample (200),MutualInfo,200,195,0.4,1.0,0.2,0.6,0.6
+Many noise (500),BRS,50,495,0.4,1.0,0.4,0.4,0.6
+Many noise (500),LASSO,50,495,0.4,1.0,0.4,0.4,0.4
+Many noise (500),ElasticNet,50,495,0.4,1.0,0.4,0.4,0.4
+Many noise (500),RandomForest,50,495,0.4,1.0,0.4,0.4,0.4
+Many noise (500),LightGBM+SHAP,50,495,0.4,1.0,0.4,0.4,0.4
+Many noise (500),PermutationImp,50,495,0.4,1.0,0.4,0.4,0.4
+Many noise (500),MutualInfo,50,495,0.4,1.0,0.4,0.4,0.4
+Many noise (1000),BRS,50,995,0.4,1.0,0.4,0.6,0.6
+Many noise (1000),LASSO,50,995,0.4,1.0,0.4,0.4,0.4
+Many noise (1000),ElasticNet,50,995,0.4,1.0,0.2,0.4,0.6
+Many noise (1000),RandomForest,50,995,0.4,1.0,0.6,0.6,0.6
+Many noise (1000),LightGBM+SHAP,50,995,0.4,1.0,0.4,0.4,0.4
+Many noise (1000),PermutationImp,50,995,0.4,1.0,0.6,0.6,0.6
+Many noise (1000),MutualInfo,50,995,0.4,1.0,0.0,0.4,0.4
+Weak signal,BRS,50,195,0.4,0.5,0.6,0.8,0.8
+Weak signal,LASSO,50,195,0.4,0.5,0.8,0.8,0.8
+Weak signal,ElasticNet,50,195,0.4,0.5,0.8,0.8,0.8
+Weak signal,RandomForest,50,195,0.4,0.5,0.6,0.6,1.0
+Weak signal,LightGBM+SHAP,50,195,0.4,0.5,0.6,0.6,0.6
+Weak signal,PermutationImp,50,195,0.4,0.5,0.6,0.8,0.8
+Weak signal,MutualInfo,50,195,0.4,0.5,0.6,0.6,0.6
+Strong signal,BRS,50,195,0.4,2.0,0.6,0.8,0.8
+Strong signal,LASSO,50,195,0.4,2.0,0.6,0.6,0.6
+Strong signal,ElasticNet,50,195,0.4,2.0,0.6,0.6,0.6
+Strong signal,RandomForest,50,195,0.4,2.0,0.6,0.6,1.0
+Strong signal,LightGBM+SHAP,50,195,0.4,2.0,0.6,0.6,0.6
+Strong signal,PermutationImp,50,195,0.4,2.0,0.6,0.6,1.0
+Strong signal,MutualInfo,50,195,0.4,2.0,0.6,0.6,0.6

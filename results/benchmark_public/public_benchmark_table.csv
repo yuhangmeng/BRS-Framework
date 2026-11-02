@@ -1,0 +1,15 @@
+dataset,method,recall_5,recall_10,recall_20,recall_50,top5,elapsed
+"ME/CFS (n=52, p=768)",BRS,0.13333333333333333,0.26666666666666666,0.43333333333333335,0.5333333333333333,valylleucine; indolelactate; phenylalanylalanine; cysteinylglycine; oleoylcholine,14.291123867034912
+"ME/CFS (n=52, p=768)",LASSO,0.03333333333333333,0.03333333333333333,0.03333333333333333,0.03333333333333333,4-imidazoleacetate; 4-hydroxyphenylpyruvate; 4-hydroxyphenylacetate; 4-hydroxyglutamate; 4-guanidinobutanoate,1.0449128150939941
+"ME/CFS (n=52, p=768)",ElasticNet,0.03333333333333333,0.03333333333333333,0.03333333333333333,0.03333333333333333,4-imidazoleacetate; 4-hydroxyphenylpyruvate; 4-hydroxyphenylacetate; 4-hydroxyglutamate; 4-guanidinobutanoate,2.6010706424713135
+"ME/CFS (n=52, p=768)",RandomForest,0.16666666666666666,0.26666666666666666,0.4,0.6666666666666666,dimethyl sulfone; oleoylcholine; 3-hydroxydecanoate; indolelactate; piperine,0.8681583404541016
+"ME/CFS (n=52, p=768)",LightGBM+SHAP,0.06666666666666667,0.1,0.16666666666666666,0.23333333333333334,oleoylcholine; alpha-ketobutyrate; indolelactate; 4-allylphenol sulfate; palmitoylcholine,0.5416772365570068
+"ME/CFS (n=52, p=768)",PermutationImp,0.16666666666666666,0.2,0.36666666666666664,0.6,dimethyl sulfone; oleoylcholine; 3-hydroxydecanoate; piperine; indolelactate,103.39588928222656
+"ME/CFS (n=52, p=768)",MutualInfo,0.06666666666666667,0.1,0.13333333333333333,0.26666666666666666,oleoylcholine; palmitoylcholine; linoleoylcholine*; indolelactate; 6-oxopiperidine-2-carboxylate,0.9727177619934082
+"KOMP Pmm2 (n=46, p=1119)",BRS,0.25,0.35,0.6,0.85,"PC 16:0/9:0(COOH); 3,6-Anhydro-galactose; Cotinine; Leu-Ala; 3alpha-Androstanediol",14.327234506607056
+"KOMP Pmm2 (n=46, p=1119)",LASSO,0.15,0.15,0.2,0.3,"PC 16:0/9:0(COOH); Cotinine; 3,6-Anhydro-galactose; Indoxyl sulfate; 5-Methoxyindoleacetic acid",23.38069796562195
+"KOMP Pmm2 (n=46, p=1119)",ElasticNet,0.15,0.2,0.2,0.3,"PC 16:0/9:0(COOH); Cotinine; 3,6-Anhydro-galactose; Indoxyl sulfate; 5-Methoxyindoleacetic acid",69.71022343635559
+"KOMP Pmm2 (n=46, p=1119)",RandomForest,0.25,0.35,0.4,0.65,"PC 16:0/9:0(COOH); 3,6-Anhydro-galactose; 3alpha-Androstanediol; Cotinine; Leu-Ala",0.8126609325408936
+"KOMP Pmm2 (n=46, p=1119)",LightGBM+SHAP,0.2,0.2,0.2,0.3,"3,6-Anhydro-galactose; Cotinine; 3alpha-Androstanediol; PC 16:0/9:0(COOH); 11-HETE",0.5480356216430664
+"KOMP Pmm2 (n=46, p=1119)",PermutationImp,0.25,0.35,0.4,0.5,"PC 16:0/9:0(COOH); 3,6-Anhydro-galactose; 3alpha-Androstanediol; Cotinine; Leu-Ala",132.51017594337463
+"KOMP Pmm2 (n=46, p=1119)",MutualInfo,0.2,0.35,0.55,0.8,"3,6-Anhydro-galactose; PC 16:0/9:0(COOH); Cotinine; 5alpha-Pregnane-3,20-dione; Ala-Gln",1.3303337097167969
