@@ -1,12 +1,9 @@
-# Tested with Python 3.12.2 on Windows 11 (CPU only); the versions below are those of the published analyses.
+# Tested with Python 3.12.2 (Windows 11, CPU only)
 numpy==1.26.4
 pandas==2.3.3
 scipy==1.17.1
 scikit-learn==1.8.0
-torch==2.11.0           # perceptron with feature attention (CPU build is sufficient)
 lightgbm==4.7.0
-shap==0.52.0            # TreeSHAP interaction values and the SHAP baselines
-matplotlib==3.10.9
-networkx==3.6.1
-openpyxl==3.1.5         # Excel input/output
+torch==2.11.0      # the CPU build is sufficient
 tqdm==4.67.3
+openpyxl==3.1.5

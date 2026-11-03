@@ -1,8 +1,0 @@
-method,recall_5,recall_10,recall_20,pair_rank,triplet_rank,stability_jaccard5,signal_recovery,top5
-BRS,0.6,0.8,1.0,8.0,142.0,0.3534670008354219,0.5199999999999999,X_lin_3; X_nonlin_1; X_lin_1; X_noise_166; X_noise_116
-LASSO,0.8,0.8,0.8,63.0,,0.39367167919799495,0.5700000000000001,X_lin_3; X_nonlin_1; X_lin_1; X_noise_116; X_lin_2
-ElasticNet,0.8,0.8,0.8,69.0,,0.38414786967418546,0.6100000000000001,X_lin_3; X_nonlin_1; X_lin_1; X_noise_116; X_lin_2
-RandomForest,0.6,0.6,1.0,190.0,363.0,0.5583751044277361,0.57,X_nonlin_1; X_lin_3; X_lin_1; X_noise_168; X_noise_128
-LightGBM+SHAP,0.6,0.6,0.6,60.0,,0.3809314954051796,0.5599999999999999,X_nonlin_1; X_lin_3; X_lin_1; X_noise_168; X_noise_128
-PermutationImp,0.6,0.6,0.8,,,0.4961988304093567,0.5700000000000001,X_nonlin_1; X_lin_3; X_lin_1; X_noise_168; X_noise_128
-MutualInfo,0.6,0.6,0.6,,,0.38281119465329994,0.49000000000000005,X_nonlin_1; X_lin_3; X_lin_1; X_noise_91; X_noise_153
