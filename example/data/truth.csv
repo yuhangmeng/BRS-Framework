@@ -1,0 +1,12 @@
+phenotype,planted,effect,coefficient
+NF,M01,single,1.0
+NF,M02,single,0.8
+NF,M03,single,0.6
+NV,M04,single,0.9
+NV,M05,single,0.7
+NM,M06,single,0.8
+NM,M07,single (weak),0.4
+NM,M08,single (weak),0.4
+NM,M07 x M08,interaction,0.6
+NU,M09,single,0.9
+NU,M10,single,0.7

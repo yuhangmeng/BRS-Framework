@@ -7,3 +7,4 @@ lightgbm==4.7.0
 torch==2.11.0      # the CPU build is sufficient
 tqdm==4.67.3
 openpyxl==3.1.5
+matplotlib==3.10.9  # figures/ only

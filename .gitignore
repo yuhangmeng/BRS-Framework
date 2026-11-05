@@ -9,3 +9,5 @@ data/preprocessing/filtered_metabolites_log.xlsx
 results/brs_full_data/
 results/stability_runs/
 results/nested_cv_runs/
+example/run/
+figures/output/

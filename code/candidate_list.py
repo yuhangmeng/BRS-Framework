@@ -104,8 +104,8 @@ for s in STRAINS:
             lim.append("selection probability exactly at the threshold")
         if not tier1:
             lim.append("below the stability threshold (exploratory)")
-            if s == "NU":
-                lim.append("no NU metabolite reached the threshold; the pool of seven is a cut-off inherited from an "
+            if pools.loc[s, "pool type"] == "exploratory":
+                lim.append(f"no {s} metabolite reached the threshold; the pool of seven is a cut-off inherited from an "
                            "earlier analysis, not a pre-specified rule")
             elif not in_pool:
                 lim.append("not tested in the combination test (Step 4)")
@@ -202,7 +202,7 @@ for _, r in combos.iterrows():
         lim = ["meets the reproducibility criterion"]
     rows_b.append({
         "target strain": NAME[s], "metabolite combination": pretty(r.combination), "type": order,
-        "pool type": "stability-selected" if s in ("NF", "NV", "NM") else "exploratory (NU)",
+        "pool type": "stability-selected" if pools.loc[s, "pool type"] == "stability-selected" else f"exploratory ({s})",
         "members' selection probability (target strain)": " / ".join(f"{p:.2f}" for p, _ in info),
         "members' leverage": " / ".join(f"{lv:.2f}" for _, lv in info),
         "complementarity recurrence (pi_comp)": round(r.pi_comp, 2),
