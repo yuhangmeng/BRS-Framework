@@ -142,17 +142,18 @@ BRS outputs themselves are not distributed.
 |---|---|
 | `stability_selection.xlsx` | same values as Supplementary Table S10, part A |
 | `nested_cv.xlsx` | same values as the strict nested cross-validation in Supplementary Table S19 |
-| `combination_test.xlsx`, `candidate_list.xlsx` | same values as the wheat part of Supplementary Table S15 and Parts A and B of Table S16, except one thing for the seven-metabolite NU pool: the permutation fractions differ by at most 0.013, and some combinations list their members in a different order |
+| `combination_test.xlsx`, `candidate_list.xlsx` | same values as the wheat part of Supplementary Table S15 and Parts A and B of Table S16, except for the NV pool: the permutation fractions of its combinations differ by at most 0.009, and two pairs list their members in a different order |
 
-The NU difference arises because metabolites with tied selection probabilities are now ordered by their
-full-data BRS, so the label permutations are drawn in a different order. Observed gains and recurrences are
-unchanged.
+The NV difference arises because L-tryptophan and N2-succinyl-L-arginine have the same selection probability and
+are ordered here by their full-data BRS, so the label permutations are drawn in a different order. Observed gains,
+recurrences and reproducibility calls are unchanged.
 
 **Rerunning from scratch** with the versions in `requirements.txt`:
 - The nested cross-validation runs of an outer fold reproduced the original BRS values exactly.
 - The full-data and half-sample runs gave the same reproducible metabolites and the same top ten for every strain.
 - Individual BRS values of lower-ranked metabolites can differ slightly between library versions or thread
-  settings. In our rerun, the selection probability of six metabolites with π̂ ≤ 0.16 changed by 0.02.
+  settings. Between two of our runs on different days, the selection probability of five metabolites with π̂ ≤ 0.08
+  changed by 0.02.
 
 ## Reproducing the figures and tables
 
@@ -201,7 +202,15 @@ wording are specific to the wheat study.
 Root exudates of 44 wheat accessions (20 Austrian, 24 Indian) were measured by GC-TOF-MS and LC-Orbitrap
 metabolomics. Ammonia-oxidation inhibition (AOI%) was measured against *Candidatus* Nitrosocosmicus franklandianus
 (NF), *Nitrososphaera viennensis* (NV), *Nitrosospira multiformis* (NM) and *Nitrosomonas ureae* (NU). The data were
-generated as described by Ghatak et al. (2025), *Plant Biotechnology Journal* 23: 4755–4772.
+generated as described by Ghatak et al. (2025), *Plant Biotechnology Journal* 23: 4755–4772. The 413 metabolite
+intensities in `data/preprocessing` are those of their Supplementary Tables S1a (GC-MS) and S2a (LC-MS), and the AOI%
+values are the genotype means of their Supplementary Table S3; both were checked value by value against these tables.
+
+**Correction (2026-11-06).** In earlier versions of this repository, nine of the 176 AOI% values (Activus, Adrianus,
+Alicantus and C.R4_R for NU; Arnold, Gallus and HUW669 for NF; Mandarin and SR.R4_R for NV) differed from Table S3 of
+Ghatak et al. (2025), because they had been copied from an intermediate working file. They now agree with Table S3,
+and all files in `results/` were recomputed. The high- and low-inhibition labels were unchanged; the list of
+reproducible metabolites gained L-tryptophan (NV).
 
 The code of an earlier version of the framework is kept under the tag
 [`v1-2026-05`](https://github.com/yuhangmeng/BRS-Framework/tree/v1-2026-05).

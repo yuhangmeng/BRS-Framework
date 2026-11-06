@@ -16,7 +16,8 @@ from common import GUILD, RES, STRAINS, pi_single, write_table
 LEV_FLAG, PI_THR = 0.7, 0.4
 K_COL = "k for the final mixture (inner rule on 25 full-data pairs)"
 DISPLAY = {"6,8C-glycosylated": "6,8-C-Glycosylated", "gamma-": "γ-", "N-acetyltryptophan": "N-Acetyltryptophan",
-           "Fatty acid - C18H30O3": "Fatty acid (C₁₈H₃₀O₃)"}
+           "Fatty acid - C18H30O3": "Fatty acid (C₁₈H₃₀O₃)", "Flavone - C17H14O6": "Flavone (C₁₇H₁₄O₆)",
+           "similar to Coniferyl aldehyde": "Coniferyl aldehyde-like compound"}
 
 P = pi_single()
 final = pd.read_excel(RES / "nested_cv.xlsx", sheet_name="final_mixtures").set_index("target")

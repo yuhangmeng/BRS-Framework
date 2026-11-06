@@ -4,7 +4,7 @@ Step 4: combination test among reproducible metabolites.
 
 Pairs and triads are enumerated only within a small, fixed pool per strain: the metabolites with pi >= 0.4 for that
 strain (stability-selected pool). A strain without reproducible metabolites gets an exploratory pool of its
-N_EXPLORATORY metabolites with the highest selection probability (in the manuscript: NU, seven metabolites, a cut-off
+N_EXPLORATORY metabolites with the highest selection probability (in the manuscript: NU, eight metabolites, a cut-off
 inherited from an earlier analysis, not a pre-specified rule). On the same 50 half-samples as stability selection,
 the Validity term is decomposed into two out-of-fold (OOF) R^2 gains of linear models:
 
@@ -39,7 +39,7 @@ FOLDS, SEED = 5, 42
 DELTA = 0.02
 N_PERM = 20
 PI_GATE = 0.4
-N_EXPLORATORY = 7
+N_EXPLORATORY = 8
 TANH_SCALE = 3.0
 
 

@@ -105,8 +105,8 @@ for s in STRAINS:
         if not tier1:
             lim.append("below the stability threshold (exploratory)")
             if pools.loc[s, "pool type"] == "exploratory":
-                lim.append(f"no {s} metabolite reached the threshold; the pool of seven is a cut-off inherited from an "
-                           "earlier analysis, not a pre-specified rule")
+                lim.append(f"no {s} metabolite reached the threshold; the pool of {int(pools.loc[s, 'size'])} is a cut-off "
+                           "inherited from an earlier analysis, not a pre-specified rule")
             elif not in_pool:
                 lim.append("not tested in the combination test (Step 4)")
         lim.append(MARKER)

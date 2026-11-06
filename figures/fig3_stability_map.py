@@ -22,7 +22,7 @@ R_MIN, PI_GATE, LEV_FLAG, TOP_K = 0.2, 0.4, 0.7, 10
 SHORT = {"6,8C-glycosylated flavone": "6,8-C-Glycosylated\nflavone", "2-Hydroxybenzenepropanoic acid":
          "2-Hydroxybenzenepropanoic\nacid", "N,N-Dimethyl-L-arginine": "N,N-Dimethyl-\nL-arginine",
          "gamma-Glutamylmethionine": "γ-Glutamylmethionine", "N2-Succinyl-L-arginine": "N2-Succinyl-\nL-arginine",
-         "Ala-ala": "Ala-Ala"}
+         "Ala-ala": "Ala-Ala", "L-TRYPTOPHAN": "L-Tryptophan"}
 GROUP = {"Flavonoids": "phenolic", "Phenylpropanoids": "phenolic", "Amino acids and derivatives": "nitrogen"}
 BLUE, AQUA, NEUTRAL = "#2a78d6", "#1baf7a", "#a9a8a2"
 INK, INK_2, GRID, AXIS, BG = "#0b0b0b", "#52514e", "#e1e0d9", "#c3c2b7", "#d6d5cf"
@@ -78,7 +78,10 @@ for ax, s in zip(axes.ravel(), STRAINS):
         h = 0.045 * (txt.count("\n") + 1)
         y_lab = min(pi[k] + 0.012, y_prev - (h_prev + h) / 2 - 0.012)
         y_prev, h_prev = y_lab, h
-        ax.plot([r[k] + 0.018, x_col - 0.008], [pi[k], y_lab], color=INK_2, lw=0.5, zorder=4)
+        # a label placed well below its point gets its leader from the bottom of the point, so that the leader
+        # passes under a neighbouring point with the same pi instead of through it
+        x0, y0 = (r[k] + 0.006, pi[k] - 0.022) if y_lab < pi[k] - 0.03 else (r[k] + 0.018, pi[k])
+        ax.plot([x0, x_col - 0.008], [y0, y_lab], color=INK_2, lw=0.5, zorder=4)
         ax.text(x_col, y_lab, txt, fontsize=FS - 0.6, color=INK, ha="left", va="center", zorder=6,
                 linespacing=1.1, bbox=dict(boxstyle="round,pad=0.1", fc="white", ec="none", alpha=0.85))
 
